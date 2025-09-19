@@ -1,0 +1,96 @@
+.sidebar-main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-primary);
+    height: 100%;
+    max-height: 100%;
+    width: 260px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1031;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),
+    0 7px 10px -5px rgba(0,0,0,.4);
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    position: relative;
+    z-index: 4;
+    border-bottom: 1px solid white;
+    margin: 0 15px;
+}
+
+.sidebar-header h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 15px 15px;
+}
+
+.nav-menu-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: .7142em;
+    line-height: 1.625rem;
+}
+
+.nav-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+}
+
+.nav-text:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-radius: 30px;
+}
+
+.nav-text.active {
+    padding: 14px 18px;
+    border-radius: 30px;
+    background: white;
+    color: #2ca8ff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+.nav-title {
+    text-transform: uppercase;
+    font-size: .75rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: inherit;
+}
+
+.nav-text .MuiSvgIcon-root {
+    color: inherit;
+    font-size: 20px;
+}
